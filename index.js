@@ -33,6 +33,7 @@ module.exports = function globalJsdom (html, options) {
     global[key] = window[key]
   })
 
+  global.customElements = window.customElements
   global.document = window.document
   global.window = window
   window.console = global.console
